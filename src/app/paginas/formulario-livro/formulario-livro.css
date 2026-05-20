@@ -1,0 +1,95 @@
+.formulario-container {
+  max-width: 520px;
+  margin: 2rem auto;
+  padding: 2rem;
+
+  background: #FFFDF8;
+  border: 1px solid #E7E2D8;
+}
+
+.formulario-container h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+
+  margin-bottom: 1.5rem;
+
+  color: #2C2C2A;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #888780;
+
+  margin-bottom: 0.5rem;
+}
+
+input {
+  background: #FFFDF8;
+  border-radius: 8px;
+
+  border: 1px solid #D3D1C7;
+
+  padding: 0.8rem;
+
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+
+  color: #2C2C2A;
+
+  outline: none;
+
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #D85A30;
+}
+
+button {
+  align-self: flex-start;
+  border-radius: 8px;
+
+  background: #1d780b;
+  color: #FFFDF8;
+
+  border: none;
+
+  padding: 0.8rem 1.25rem;
+
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.erro {
+  margin-top: 0.35rem;
+
+  font-size: 0.8rem;
+
+  color: #B42318;
+}
