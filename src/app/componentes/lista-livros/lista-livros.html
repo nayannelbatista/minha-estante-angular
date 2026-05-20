@@ -1,0 +1,16 @@
+<section class="lista">
+  @for(livro of livros; track livro.id){
+    <app-card-livro
+      [livro]="livro"
+      (favoritar)="favoritarLivro($event)">
+    </app-card-livro>
+  }
+</section>
+
+<!-- control flow -->
+<!-- renderizar a lista de cards
+passar as informacoes pro componente filho -->
+
+<!-- componente filho = crio um input pra receber a informacao
+componente pai = faço um property binding pra enviar a informacao
+pai -> filho = usar input() -->

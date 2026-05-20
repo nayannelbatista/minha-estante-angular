@@ -1,0 +1,63 @@
+.card {
+  background: #FFFDF8;
+  border: 1px solid #D3D1C7;
+  border-radius: 2px;
+  border-left: 4px solid #D3D1C7;
+  padding: 1.25rem;
+  transition: border-left-color 0.2s, transform 0.15s;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 140px;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-left-color: #D85A30;
+}
+
+.info {
+  flex: 1;
+}
+
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #2C2C2A;
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+
+.autor {
+  font-size: 0.8rem;
+  color: #888780;
+  margin-bottom: 0.75rem;
+}
+
+.paginas {
+  font-size: 0.75rem;
+  color: #B4B2A9;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.botao-favorito {
+  background: none;
+  border: none;
+
+  font-size: 1.8rem;
+  line-height: 1;
+
+  cursor: pointer;
+
+  padding: 0;
+
+  transition: transform 0.15s ease;
+}
+
+.botao-favorito:hover {
+  transform: scale(1.15);
+}

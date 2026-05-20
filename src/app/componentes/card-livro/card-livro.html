@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="info">
+    <h3>{{ livro().titulo }}</h3>
+
+    <p class="autor">{{ livro().autoria }}</p>
+
+    <span class="paginas">{{ livro().paginas }}</span>
+  </div>
+
+  <button (click)="toggleFavorito()" class="botao-favorito">
+    @if (livro().favorito) {
+      ❤️
+    } @else {
+      🤍
+    }
+  </button>
+</div>

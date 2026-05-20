@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=DM+Sans:wght@400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #F5F0E8;
+  color: #2C2C2A;
+}
+
+header {
+  background: #2C2C2A;
+  padding: 2.5rem 2rem 2rem;
+  border-bottom: 3px solid #D85A30;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #F5F0E8;
+  letter-spacing: -0.02em;
+}
+
+header h2 {
+  color: #888780;
+  font-size: 0.85rem;
+  margin-top: 4px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.25rem;
+}
+
+nav a {
+  position: relative;
+
+  text-decoration: none;
+
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: #D8CFC2;
+
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #FFFDF8;
+  cursor: pointer;
+}
+
+nav a::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+
+  width: 0%;
+  height: 1px;
+
+  background: #D85A30;
+
+  transition: width 0.2s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
