@@ -12,7 +12,7 @@ export class CardLivro {
   favoritar = output<number>();
 
   toggleFavorito() {
-    this.favoritar.emit(this.livro().id)
+    this.favoritar.emit(this.livro().id!)
   }
 
   //comp. filho -> pai = output

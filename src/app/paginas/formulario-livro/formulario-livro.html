@@ -1,1 +1,22 @@
-<p>formulario-livro works!</p>
+<section class="formulario-container">
+  <h2>Adicionar livro</h2>
+
+  <form [formGroup]="formulario" (ngSubmit)="salvarLivro()">
+    <div class="campo">
+      <label for="titulo">Título</label>
+      <input id="titulo" type="text" formControlName="titulo"/>
+    </div>
+
+    <div class="campo">
+      <label for="autoria">Autoria</label>
+      <input id="autoria" type="text" formControlName="autoria"/>
+    </div>
+
+    <div class="campo">
+      <label for="paginas">Páginas</label>
+      <input id="paginas" type="number" formControlName="paginas"/>
+    </div>
+
+    <button type="submit">Salvar livro</button>
+  </form>
+</section>
